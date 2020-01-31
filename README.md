@@ -110,7 +110,7 @@ const int maxpat=10;
 `main.cpp`内に記されているため, 適当に書き換えていただきたい. 
 - splitNum: 正則化係数λの更新回数. 線形モデルの係数が`w = 0`となるλ (λmaxと呼ぶ)から始まる. 
 - maxloop: 最適化の最大ループ数
-- eps: 収束条件. 相対双対ギャップがeps以下で終了する
+- eps: 収束条件. 相対双対ギャップがeps以下で終了する (双対ギャップについては[こちら](https://qiita.com/birdwatcher/items/b23209f06177373c6df4)にまとめた)
 - freq: Dynamic Screeningの実行間隔 (Safe Screeningの説明は[こちら](https://qiita.com/birdwatcher/items/6c3f86693f02762d05b9)にまとめた)
 - R: λの減少係数. `λ = λ * R` によってλが変化していく. この例では, λmaxと0.01λmaxの間を対数スケールで100分割するようなRを使っている. 
 - minsup: 最小サポート
